@@ -1,0 +1,63 @@
+.events{
+    width: 50%;
+    box-shadow: 1px 2px 15px #273633;
+   min-height: 600px;
+    min-width: 400px;
+    max-width: 500px;
+    position: relative;
+   transition: 100ms;
+   display: block;
+   margin: 75px auto;
+}
+.headEvent{
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    left: 20px;
+    top: 15px;
+}
+select{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    margin-bottom: 35px;
+}
+.events .valid{
+    position: relative;
+    top: 40px;
+    left: 17px;
+    width: 150px;
+    height: 30px;
+    background-color: #005C96;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.events .valid:hover{
+    background: white;
+    color: #005C96;
+    border:1px solid #005C96;
+}
+.events .file{
+    border: none;
+}
+.eventList{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 420px;
+    height: 220px;
+    border: 2px solid black;
+}
+.achat{
+    position: absolute;
+    top: 80px;
+    left: 45%;
+    background: rgba(0, 0,0, 0.5);
+    width: 220px;
+    height: 220px;
+    color: white;
+}

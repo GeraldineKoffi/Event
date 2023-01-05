@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Pacifico&display=swap');
+body{
+	margin: 0;
+    padding: 0;
+}
+/*Header*/
+.header{
+    display: flex;
+    background: #005C96;
+    color: white;
+    height: 50px;
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-shadow: 0px 1px 20px white;
+    font-family: 'Comforter Brush', cursive;
+    font-size: 30px;
+    cursor: pointer;
+}
+.menu{
+    position: absolute; 
+    right: 30px;
+    top: 10px;
+    display: none;
+}
+.menuAll{
+    display: flex;
+    position: absolute;
+    right: 10px;
+}
+#link{
+    position: relative;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15px;
+    text-decoration: none;
+    
+}
+#link:hover{
+    color: black;
+}
+.menuAl{
+    position: relative;
+    z-index: 100;
+    top: 100%;
+    left: 80%;
+    width: 190px;
+    height: 300px;
+    background: rgba(0, 0,0, 0.5);
+    text-align: center;
+}
+#link{
+    margin-bottom: 15px;
+}
+/*Home*/
+.slider{
+    width: 1500px;
+    height: 1126px;
+    overflow: auto;
+}
+.sliders{
+    width: calc(1500px * 4);
+    animation: glisse 20s infinite;
+}
+.slide{
+    float: left;
+}
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-1500px);
+    }
+    45% {
+        transform: translateX(-1500px);
+    }
+    50%{
+        transform: translateX(-3000px);
+    }
+    60%{
+        transform: translateX(-3000px);
+    }
+    75%{
+        transform: translateX(-4500px);
+    }
+    85%{
+        transform: translateX(-4500px);
+    }
+    100%{
+        transform: translateX(-4500px);
+    }
+}
+.present{
+    width: 50%;
+    min-width: 400px;
+    max-width: 800px;
+    box-shadow: 1px 2px 15px #273633;
+    margin: 75px auto;
+    border-radius: 5px;
+    border: solid 1px white;
+    position: absolute;
+    top: 50%;
+    transition: 100ms;
+    color: white;
+    right: 40px;
+    left: 40px;
+    text-align: center;
+    align-items: center;
+}
+.present h1{
+	font-family: 'Square Peg', cursive;
+}
+/*Login*/
+.login{
+    width: 50%;
+    box-shadow: 1px 2px 15px #273633;
+   min-height: 450px;
+    min-width: 300px;
+    max-width: 500px;
+    position: relative;
+   transition: 100ms;
+   display: block;
+   margin: 75px auto;
+}
+.head{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    left: 20px;
+    top: 20px;
+}
+
+label{
+    position: relative;
+    top: 50px;
+    right: -20px;
+    font-weight: bold;
+}
+input{
+   position: relative;
+   width: 400px;
+   height: 30px;
+   top: 50px;
+   left: 20px;
+   margin-bottom: 40px; 
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   border-bottom: 2px solid black;
+}
+::placeholder{
+    position: absolute;
+    top: 10px;
+    color: gray;
+    font-family: 'poppins', cursive;
+}
+.remember{
+    position: relative;
+    width: 20px;
+    height: 18px;
+    left: 20px;
+    cursor: pointer;
+}
+.text{
+ position: relative;
+ justify-content: space-between;
+}
+.pass{
+    position: absolute;
+    text-decoration: none;
+    top: 270px;
+    right: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+.pass:hover{
+    color: #005C96;
+}
+.modif{
+    position: relative;
+    text-align: center;
+    left: 10px;
+    top: 40px;
+}
+.valid{
+    position: relative;
+    top: 70px;
+    left: 17px;
+    width: 150px;
+    height: 30px;
+    background-color: #005C96;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+.valid:hover{
+    color: #005C96;
+    background: white;
+    border: solid 1px #005C96;
+}
+.newcompte{
+    position: relative;
+    top: 35px;
+    left: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newcompte span:hover{
+    color: #005C96;   
+}
+#compte{
+        width: 50%;
+     min-width: 90px;
+     max-width: 130px;
+     margin: 75px auto;
+     border-radius: 5px;
+     border: solid 1px black;
+     position: relative;
+     transition: 100ms;
+    
+     top: -10px;
+    
+}
+/*inscription*/
+.signup{
+    width: 50%;
+    box-shadow: 1px 2px 15px #273633;
+   min-height: 600px;
+    min-width: 400px;
+    max-width: 500px;
+    position: relative;
+   transition: 100ms;
+   display: block;
+   margin: 75px auto;
+}
+.signup .valid{
+    position: relative;
+    top: 40px;
+    left: 17px;
+    width: 150px;
+    height: 30px;
+    background-color: #005C96;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+.valid:hover{
+    color: #005C96;
+    background: white;
+    border: solid 1px #005C96;
+}
+
+@media only screen and (max-width:1300px){
+    input{
+        width: 250px;
+     }
+    .pass{
+        top: 300px;
+    }
+    #role{
+        position: absolute;
+        right: 20%;
+    }
+    }
+    @media only screen and (max-width:950px){
+        .menu{
+            display: block;
+        }
+        .menuAll{
+            display: none;
+        }
+    }
+    @media only screen and (max-width:700px){
+        .menu{
+            display: block;
+        }
+        .menuAll{
+            display: none;
+        }
+        .menuAl{
+            display: block;
+            position:absolute;
+            top: 50px;
+            left: 50%;
+            width: 190px;
+            height: 300px;
+            background: rgba(0, 0,0, 0.5);
+            text-align: center;
+            align-items: center;
+        }
+        #link{
+            margin-bottom: 15px;
+        }
+    }
+/*role*/
+.role{
+    margin-top: 85px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+}
+.user{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    left:15%;
+    width: 50%;
+    height: 400px;
+    max-width: 500px;
+   border: 1PX solid #005C96;
+   box-shadow: 0 10px 10px  rgb(138, 161, 182);
+}
+.userIcon{
+    position: relative;
+    left: 25%;
+    top: 50px;   
+}
+.org{
+    position: absolute;
+    right: 15%;
+    top: 19.7%;
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    height: 400px;
+    max-width: 500px;
+   border: 1PX solid #005C96;
+   box-shadow: 0 10px 10px  rgb(138, 161, 182);
+}
+.userIcon1{
+    position: relative;
+    left: -10px;
+    top: 50px;   
+}
+.user .valid{
+    width: 250px;
+    position: relative;
+    left: -23%;
+    top: 25%;
+}
+.org .valid{
+    width: 250px;
+    position: relative;
+    left: -10px;
+    top: 25%;
+}
+
+@media only screen and (max-width:1454px){
+    .user{
+        left: 30px;
+    }
+}
+@media only screen and (max-width:1300px) {
+    .user{
+        position: relative;
+        text-align: center;
+        align-items: center;
+        left:20px;
+        width: 50%;
+        height: 300px;
+        max-width: 400px;
+       border: 1PX solid #005C96;
+       box-shadow: 0 10px 10px  rgb(138, 161, 182);
+    }
+    .userIcon{
+        position: relative;
+        left: 20%;
+        top: 50px;   
+    }
+    .org{
+        position: absolute;
+        right: 15%;
+        top: 19.7%;
+        text-align: center;
+        align-items: center;
+        width: 50%;
+        height: 300px;
+        max-width: 400px;
+       border: 1PX solid #005C96;
+       box-shadow: 0 10px 10px  rgb(138, 161, 182);
+    }
+    .userIcon1{
+        position: relative;
+        left: -10px;
+        top: 50px;   
+    }
+    .user .valid{
+        width: 250px;
+        position: relative;
+        left: -23%;
+        top: 25%;
+    }
+    .org .valid{
+        width: 250px;
+        position: relative;
+        left: -10px;
+        top: 25%;
+    
+       }
+
+}
+@media only screen and (max-width:1000px){
+    .user{
+        position: relative;
+        text-align: center;
+        align-items: center;
+        left:5%;
+        width: 50%;
+        height: 200px;
+        max-width: 300px;
+       border: 1PX solid #005C96;
+       box-shadow: 0 10px 10px  rgb(138, 161, 182);
+    }
+    .userIcon{
+        position: relative;
+        left: 20%;
+        top: 50px;   
+    }
+    .org{
+        position: absolute;
+        right: 15%;
+        top: 19.7%;
+        text-align: center;
+        align-items: center;
+        width: 50%;
+        height: 200px;
+        max-width: 300px;
+       border: 1PX solid #005C96;
+       box-shadow: 0 10px 10px rgb(138, 161, 182);
+    }
+    .userIcon1{
+        position: relative;
+        left: -10px;
+        top: 50px;   
+    }
+    .user .valid{
+        width: 250px;
+        position: relative;
+        left: -23%;
+        top: 25%;
+    }
+    .org .valid{
+        width: 250px;
+        position: relative;
+        left: -10px;
+        top: 25%;
+    
+       }
+
+
+}
+@media only screen and (max-width:900px){
+    .user{
+        left: 20px;
+    }
+}
+@media only screen and (max-width:550px){
+    .user{
+        position: relative;
+        text-align: center;
+        align-items: center;
+        left:5%;
+        width: 50%;
+        height: 150px;
+        max-width: 200px;
+       border: 1PX solid #005C96;
+       box-shadow: 0 10px 10px rgb(138, 161, 182);
+    }
+    .userIcon{
+        position: relative;
+        left: 20%;
+        top: 50px;   
+    }
+    .org{
+        position: absolute;
+        right: 15%;
+        top: 19.7%;
+        text-align: center;
+        align-items: center;
+        width: 50%;
+        height: 150px;
+        max-width: 200px;
+       border: 1PX solid #005C96;
+       box-shadow: 0 10px 10px rgb(138, 161, 182);
+    }
+    .userIcon1{
+        position: relative;
+        left: -10px;
+        top: 50px;   
+    }
+    .user .valid{
+        width: 250px;
+        position: relative;
+        left: -23%;
+        top: 25%;
+    }
+    .org .valid{
+        width: 250px;
+        position: relative;
+        left: -10px;
+        top: 25%;
+        
+       }
+}
